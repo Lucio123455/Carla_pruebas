@@ -1,0 +1,98 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Encabezado */
+.admin-header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Panel principal */
+.admin-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Sección para agregar productos */
+.add-product {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-product h2 {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Sección para visualizar productos */
+.view-products {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  margin: 0.5rem 0;
+  color: #555;
+}

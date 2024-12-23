@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+  <header class="admin-header">
+    <h1>Panel de Administración</h1>
+  </header>
+
+  <main class="admin-panel">
+    <!-- Sección para agregar productos -->
+    <section class="add-product">
+      <h2>Agregar Producto</h2>
+      <form id="product-form">
+        <label for="product-name">Nombre:</label>
+        <input type="text" id="product-name" placeholder="Ej: Pan Integral" required>
+
+        <label for="product-description">Descripción:</label>
+        <textarea id="product-description" placeholder="Ej: Pan saludable hecho con harina integral 100%"></textarea>
+
+        <label for="product-price">Precio:</label>
+        <input type="number" id="product-price" placeholder="Ej: 3.50" step="0.01" required>
+
+        <label for="product-image">Imagen (URL):</label>
+        <input type="url" id="product-image" placeholder="Ej: img/pan-integral.jpg">
+
+        <label for="is-premium">¿Es Premium?</label>
+        <input type="checkbox" id="is-premium">
+
+        <button type="submit">Agregar Producto</button>
+      </form>
+    </section>
+
+    <!-- Sección para visualizar productos -->
+    <section class="view-products">
+      <h2>Productos Disponibles</h2>
+      <div id="products-container" class="products-grid">
+        <!-- Aquí se generarán dinámicamente los productos -->
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/admin.js"></script>
+</body>
+
+</html>

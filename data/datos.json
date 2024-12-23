@@ -1,0 +1,28 @@
+{
+  "storeInfo": {
+    "title": "Panadería Artesanal",
+    "description": "Descubre los panes más frescos y deliciosos, hechos con ingredientes naturales y el amor de siempre.",
+    "navLinks": [
+      {
+        "name": "Inicio",
+        "href": "#"
+      },
+      {
+        "name": "Login",
+        "href": "./pages/login.html"
+      },
+      {
+        "name": "Productos",
+        "href": "#productos"
+      },
+      {
+        "name": "Contacto",
+        "href": "#contacto"
+      },
+      {
+        "name": "Panel admin",
+        "href": "./pages/admin.html"
+      }
+    ]
+  }
+}
